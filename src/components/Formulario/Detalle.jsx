@@ -40,6 +40,7 @@ const Detalle = () => {
     elementoPokemon,
     alturaPokemon,
     edadPokemon,
+    especiePokemon,
   } = formulario?.pokemon;
 
   // Utilizamos un useEffect para que se ejecute una vez realiza la mutación y mostrar el mensaje de éxito o error.
@@ -72,6 +73,7 @@ const Detalle = () => {
           <p>Elemento: {elementoPokemon}</p>
           <p>Altura: {alturaPokemon}</p>
           <p>Edad: {edadPokemon}</p>
+          <p>Especie: {especiePokemon}</p>
         </div>
       </section>
       <button className="boton-enviar" onClick={() => mutate(formulario)}>

@@ -8,6 +8,7 @@ import pikachu from "../../assets/pikachu.png";
 import Input from "../Input/Input";
 import Select from "../Select/Select";
 import Detalle from "./Detalle";
+import InputEspecie from "../InputEspecie/InputEspecie";
 
 // Creamos la función que obtiene los tipos de pokemon de la API.
 const getPokemonTypes = async () => {
@@ -79,6 +80,7 @@ const Formulario = () => {
                 />
                 <Input name="alturaPokemon" label="Altura" isPokemon={true} />
                 <Input name="edadPokemon" label="Edad" isPokemon={true} />
+                <InputEspecie name="especiePokemon" label="Especie" />
               </div>
             </div>
             <Detalle />
